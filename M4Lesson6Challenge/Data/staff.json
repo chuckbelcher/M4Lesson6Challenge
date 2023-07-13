@@ -1,0 +1,36 @@
+[
+        {
+            "name": "Chuck Belcher",
+            "team": "Cloud Support",
+            "focus": "Database and Automation",
+            "yearsOfExperience": 30
+            
+        },
+        {
+            "name": "Ken Smith",
+            "team": "Oracle",
+            "focus": "Arcitecture and Design",
+            "yearsOfExperience": 35
+            
+        },
+        {
+            "name": "Robert Lowery",
+            "team": "Cloud Support",
+            "focus": "Compute and Monitoring",
+            "yearsOfExperience": 15
+            
+        },
+        {
+            "name": "Philip Marlow",
+            "team": "MySQL Support",
+            "focus": "Impelementation and Support",
+            "yearsOfExperience": 3
+            
+        },
+        {
+            "name": "Haley Belcher",
+            "team": "Human Resources",
+            "yearsOfExperience": 2
+            
+        }
+]

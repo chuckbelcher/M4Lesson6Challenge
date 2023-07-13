@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct PreferenceView: View {
+    @EnvironmentObject var staffModel: StaffModel
     var body: some View {
-        Text("Preference View")
+        
+        VStack {
+            Text("Preference View")
+                .font(.title)
+            Toggle("Show Team: ", isOn: $staffModel.showTeam)
+            Toggle("Show Focus: ", isOn: $staffModel.showFocus)
+            Toggle("Show Experience: ", isOn: $staffModel.showYearsOfExperience)
+            Spacer()
+        }
+        .padding()
     }
 }
 
 struct PreferenceView_Previews: PreviewProvider {
     static var previews: some View {
         PreferenceView()
+            .environmentObject(StaffModel())
     }
 }

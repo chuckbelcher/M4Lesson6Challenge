@@ -16,15 +16,25 @@ struct StaffView: View {
             VStack (alignment: .leading) {
                 Text(employee.name)
                     .font(.title)
-                Text(" -  " + employee.team)
-                let focusArea = employee.focus ?? "Non-Technical"
-                Text(" -  " + focusArea)
-                if employee.yearsOfExperience < 5 {
-                    Text(" -  " + String(employee.yearsOfExperience) + " Years of experience")
-                        .foregroundColor(.red)
-                } else {
-                    Text(" -  " + String(employee.yearsOfExperience) + " Years of experience")
-                        .foregroundColor(.green)
+                
+                if staffModel.showTeam == true {
+                    Text(" -  " + employee.team)
+                }
+                
+                if staffModel.showFocus == true {
+                    let focusArea = employee.focus ?? "Non-Technical"
+                    
+                    Text(" -  " + focusArea)
+                }
+                
+                if staffModel.showYearsOfExperience {
+                    if employee.yearsOfExperience < 5 {
+                        Text(" -  " + String(employee.yearsOfExperience) + " Years of experience")
+                            .foregroundColor(.red)
+                    } else {
+                        Text(" -  " + String(employee.yearsOfExperience) + " Years of experience")
+                            .foregroundColor(.green)
+                    }
                 }
             }
         }

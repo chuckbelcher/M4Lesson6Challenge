@@ -10,6 +10,9 @@ import Foundation
 class StaffModel: ObservableObject {
     
     @Published var staff = [Person]()
+    @Published var showFocus = true
+    @Published var showTeam = true
+    @Published var showYearsOfExperience = true
     
     init() {
         

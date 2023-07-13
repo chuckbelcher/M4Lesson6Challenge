@@ -8,6 +8,7 @@
 import Foundation
 
 class Person: Identifiable, Decodable {
+    
     var id: UUID?
     var name: String
     var team: String

@@ -11,7 +11,8 @@ import SwiftUI
 struct M4Lesson6ChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            StaffView()
+            StaffTabView()
+                .environmentObject(StaffModel())
         }
     }
 }

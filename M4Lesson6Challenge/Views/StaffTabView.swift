@@ -26,7 +26,6 @@ struct StaffTabView: View {
                     }
                 }
         }
-        .environmentObject(StaffModel())
         
     }
 }
@@ -34,5 +33,6 @@ struct StaffTabView: View {
 struct StaffTabView_Previews: PreviewProvider {
     static var previews: some View {
         StaffTabView()
+            .environmentObject(StaffModel())
     }
 }
